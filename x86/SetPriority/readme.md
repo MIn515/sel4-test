@@ -16,5 +16,3 @@
 
    > 在main执行之后，新线程执行，并且有一个 vm 0错误
 
-
-/home/wangmin/sel4-test/all-other/qemu/build/qemu-system-riscv64  -machine spike -cpu rv64 -nographic -serial mon:stdio -m size=2G -bios none -kernel images/kernel.elf  -append "root=/dev/vda rw console=ttyS0" -device virtio-blk-device,drive=hd0 -drive file=images/sel4test-driver-image-riscv-spike,format=raw,id=hd0 
