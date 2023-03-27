@@ -2,6 +2,8 @@
 
 ## part 1
 
+
+> 
 > patching file include/arch/riscv/arch/kernel/boot.h
 > Hunk #1 FAILED at 25.
 >1 out of 1 hunk FAILED -- saving rejects to file include/arch/riscv/arch/kernel/boot.h.rej
@@ -24,6 +26,7 @@
 >|+++ include/plat/spike/plat/machine/fdt.h
 >--------------------------
 >File to patch: 
+
 
 1. include/arch/riscv/arch/kernel/boot.h
 
