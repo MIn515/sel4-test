@@ -1,6 +1,6 @@
-> 补丁失败的原因
+> 
 
-##  补丁修改
+##  补丁修改 /plat/spike/下的代码需要补充
 
 <details>
 <summary>1. diff --git include/arch/riscv/arch/kernel/boot.h include/arch/riscv/arch/kernel/boot.h</summary>
