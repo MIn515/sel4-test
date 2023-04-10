@@ -641,7 +641,8 @@ index eb6da7ea..ae39c0b4 100644
  
  </details>
 
-
+<details>
+<summary></summary>
 
 ## part 1
 
@@ -680,4 +681,4 @@ File to patch:
 4. include/plat/spike/plat/machine/fdt.h
 > 没有该文件
 
-
+ </details>
