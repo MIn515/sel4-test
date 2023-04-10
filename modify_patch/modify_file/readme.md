@@ -1,6 +1,9 @@
-> 
+- /plat/spike/下的代码需要补充
+ 原因可能是：
+  - 位置变化
+  - 硬件未适配
 
-##  补丁修改 /plat/spike/下的代码需要补充
+##  补丁修改 
 
 <details>
 <summary>1. diff --git include/arch/riscv/arch/kernel/boot.h include/arch/riscv/arch/kernel/boot.h</summary>
@@ -137,7 +140,7 @@ index dd828f1f..fa8298b8 100644
  </details>
  
  <details>
-<summary>5. diff --git include/plat/spike/plat/machine/fdt.h include/plat/spike/plat/machine/fdt.h</summary>
+<summary>5. diff --git include/plat/spike/plat/machine/fdt.h include/plat/spike/plat/machine/fdt.h ⭐ </summary>
  
  ```
 diff --git include/plat/spike/plat/machine/fdt.h include/plat/spike/plat/machine/fdt.h
@@ -157,7 +160,7 @@ index 49972d31..9c52b510 100644
  </details>
  
  <details>
-<summary>6. diff --git include/plat/spike/plat/machine/hardware.h include/plat/spike/plat/machine/hardware.h</summary>
+<summary>6. diff --git include/plat/spike/plat/machine/hardware.h include/plat/spike/plat/machine/hardware.h ⭐ </summary>
  
  ```
 diff --git include/plat/spike/plat/machine/hardware.h include/plat/spike/plat/machine/hardware.h
@@ -245,7 +248,7 @@ index 5d7f4977..39841030 100644
  </details>
  
  <details>
-<summary>8. diff --git src/arch/riscv/kernel/boot.c src/arch/riscv/kernel/boot.c</summary>
+<summary>8. diff --git src/arch/riscv/kernel/boot.c src/arch/riscv/kernel/boot.c ⭐</summary>
  
  ```
 diff --git src/arch/riscv/kernel/boot.c src/arch/riscv/kernel/boot.c
@@ -581,7 +584,7 @@ index c68f4411..daf361da 100644
  </details>
  
  <details>
-<summary>11. diff --git src/plat/spike/machine/fdt.c src/plat/spike/machine/fdt.c</summary>
+<summary>11. diff --git src/plat/spike/machine/fdt.c src/plat/spike/machine/fdt.c ⭐ </summary>
  
  ```
 diff --git src/plat/spike/machine/fdt.c src/plat/spike/machine/fdt.c
@@ -610,7 +613,7 @@ index 0b547a36..89c1ae5e 100644
  </details>
  
  <details>
-<summary>12. diff --git src/plat/spike/machine/hardware.c src/plat/spike/machine/hardware.c</summary>
+<summary>12. diff --git src/plat/spike/machine/hardware.c src/plat/spike/machine/hardware.c ⭐ </summary>
  
  ```
 diff --git src/plat/spike/machine/hardware.c src/plat/spike/machine/hardware.c
