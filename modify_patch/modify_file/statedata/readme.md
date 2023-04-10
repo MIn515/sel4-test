@@ -1,4 +1,6 @@
-## 10.1.1
+
+<details>
+<summary> 10.1.1 未修改</summary>
 
 ```c
 #ifndef __ARCH_MODEL_STATEDATA_H
@@ -32,6 +34,11 @@ extern pte_t kernel_image_level2_pt[BIT(PT_INDEX_BITS)];
 #endif
 ```
 
+</details>
+
+<details>
+<summary> 10.1.1 官方修改</summary>
+
 ```c
 /* Kernel Page Tables */
 extern pte_t kernel_root_pageTable[BIT(PT_INDEX_BITS)] VISIBLE;
@@ -49,8 +56,11 @@ extern pte_t kernel_image_level3_pt[BIT(PT_INDEX_BITS)];
 #endif
 ```
 
+</details>
 
-## new
+
+<details>
+<summary> new 未修改</summary>
 
 ```c
 #pragma once
@@ -84,7 +94,11 @@ extern pte_t kernel_image_level2_log_buffer_pt[BIT(PT_INDEX_BITS)];
 #endif
 ```
 
-## modify 
+</details>
+
+
+<details>
+<summary> new 手动修改</summary>
 
 ```c
 
@@ -108,3 +122,5 @@ extern pte_t kernel_image_level2_dev_pt[BIT(PT_INDEX_BITS)];
 extern pte_t kernel_image_level2_log_buffer_pt[BIT(PT_INDEX_BITS)];
 #endif
 ```
+
+</details>
