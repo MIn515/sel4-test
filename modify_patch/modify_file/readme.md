@@ -4,7 +4,8 @@
 
 <details>
 <summary>1. diff --git include/arch/riscv/arch/kernel/boot.h include/arch/riscv/arch/kernel/boot.h</summary>
-diff --git include/arch/riscv/arch/kernel/boot.h include/arch/riscv/arch/kernel/boot.h
+ ```
+ diff --git include/arch/riscv/arch/kernel/boot.h include/arch/riscv/arch/kernel/boot.h
 index 053c1f3f..f597664e 100644
 --- include/arch/riscv/arch/kernel/boot.h
 +++ include/arch/riscv/arch/kernel/boot.h
@@ -29,7 +30,8 @@ index 053c1f3f..f597664e 100644
  );
  
  #endif
-</details>
+ ```
+ </details>
 
 
 
