@@ -1,5 +1,20 @@
 > 补丁失败的原因
 
+## 全部补丁
+1. diff --git include/arch/riscv/arch/kernel/boot.h include/arch/riscv/arch/kernel/boot.h
+2. diff --git include/arch/riscv/arch/kernel/vspace.h include/arch/riscv/arch/kernel/vspace.h
+- diff --git include/arch/riscv/arch/model/statedata.h include/arch/riscv/arch/model/statedata.h
+- diff --git include/arch/riscv/arch/sbi.h include/arch/riscv/arch/sbi.h
+- diff --git include/plat/spike/plat/machine/fdt.h include/plat/spike/plat/machine/fdt.h
+- diff --git include/plat/spike/plat/machine/hardware.h include/plat/spike/plat/machine/hardware.h
+- diff --git src/arch/riscv/head.S src/arch/riscv/head.S
+- diff --git src/arch/riscv/kernel/boot.c src/arch/riscv/kernel/boot.c
+- diff --git src/arch/riscv/kernel/vspace.c src/arch/riscv/kernel/vspace.c
+- diff --git src/arch/riscv/model/statedata.c src/arch/riscv/model/statedata.c
+- diff --git src/plat/spike/machine/fdt.c src/plat/spike/machine/fdt.c
+- diff --git src/plat/spike/machine/hardware.c src/plat/spike/machine/hardware.c
+
+
 ## part 1
 
 
@@ -36,3 +51,5 @@ File to patch:
 
 4. include/plat/spike/plat/machine/fdt.h
 > 没有该文件
+
+
