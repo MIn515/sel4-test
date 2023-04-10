@@ -1,6 +1,6 @@
 > 补丁失败的原因
 
-## 全部补丁
+##  补丁修改
 
 <details>
 <summary>1. diff --git include/arch/riscv/arch/kernel/boot.h include/arch/riscv/arch/kernel/boot.h</summary>
