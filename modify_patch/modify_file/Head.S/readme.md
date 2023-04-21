@@ -1,41 +1,81 @@
 ## 10.1.1  no_modify
 
 ```c
-#include <object/structures.h>
+#include <config.h>
+#include <util.h>
 
-cap_t create_it_address_space(cap_t root_cnode_cap, v_region_t it_v_reg);
-void map_it_pt_cap(cap_t vspace_cap, cap_t pt_cap);
-void map_it_frame_cap(cap_t vspace_cap, cap_t frame_cap);
-void map_kernel_window(void);
-void map_kernel_frame(paddr_t paddr, pptr_t vaddr, vm_rights_t vm_rights);
-void activate_kernel_vspace(void);
-void write_it_asid_pool(cap_t it_ap_cap, cap_t it_lvl1pt_cap);
+.section .boot.text, "ax"
+.global _start
+.extern init_kernel
+.extern kernel_stack_alloc
+.extern __global_pointer$
+.extern restore_user_context
+.extern trap_entry
+
+_start:
+.option push
+.option norelax
+1:auipc gp, %pcrel_hi(__global_pointer$)
+  addi  gp, gp, %pcrel_lo(1b)
+.option pop
+
+  /* hartid is in a4 */
+  li  sp, BIT(CONFIG_KERNEL_STACK_BITS)
+  mul sp, sp, a4
+  la  x1, (kernel_stack_alloc + (BIT(CONFIG_KERNEL_STACK_BITS)))
+  add sp, sp, x1
+
+  csrrw x0, sscratch, a4 /* zero sscratch for the init task */
+
+  /* la sp, (kernel_stack_alloc + BIT(CONFIG_KERNEL_STACK_BITS)) */
+  jal init_kernel
+
+  la ra, restore_user_context
+  jr ra
 ```
 
 ## 10.1.1 apply_patch
 
 ```c
-#include <object/structures.h>
+  /* hartid is in a4 */
+  li  sp, BIT(CONFIG_KERNEL_STACK_BITS)
+  //mul sp, sp, a4
+  mul sp, sp, x0
+  la  x1, (kernel_stack_alloc + (BIT(CONFIG_KERNEL_STACK_BITS)))
+  add sp, sp, x1
 
-cap_t create_it_address_space(cap_t root_cnode_cap, v_region_t it_v_reg);
-void map_it_pt_cap(cap_t vspace_cap, cap_t pt_cap);
-void map_it_frame_cap(cap_t vspace_cap, cap_t frame_cap);
-void keystone_map_kernel_window(word_t start, word_t end);
-void map_kernel_window(void);
-void map_kernel_frame(paddr_t paddr, pptr_t vaddr, vm_rights_t vm_rights);
-void activate_kernel_vspace(void);
-void write_it_asid_pool(cap_t it_ap_cap, cap_t it_lvl1pt_cap);
+//csrrw x0, sscratch, a4 /* zero sscratch for the init task */
+csrrw x0, sscratch, x0 //a4 /* zero sscratch for the init task */ b 
 ```
 
 ## 11.0.0 vspace与10.1.1相差不大，改的地方如下
 
 ```c
-// 11.0.0 去除下面一句话
-exception_t performPageInvocationRemapPTE(pte_t pte, pte_t *base);
+_start:
+  fence.i
+.option push
+.option norelax
+1:auipc gp, %pcrel_hi(__global_pointer$)
+  addi  gp, gp, %pcrel_lo(1b)
+.option pop
+  la sp, (kernel_stack_alloc + BIT(CONFIG_KERNEL_STACK_BITS))
+  csrw sscratch, x0 /* zero sscratch for the init task */
+
+#if CONFIG_MAX_NUM_NODES > 1
+/* setup the per-core stack */
+  mv t0, a5
+  slli t0, t0, CONFIG_KERNEL_STACK_BITS
+  add  sp, sp, t0
+  /* put the stack in sscratch */
+  csrw sscratch, sp
+#endif
+  jal init_kernel
+  la ra, restore_user_context
+  jr ra
 ```
 
 ## 11.0.0 try to modify 
 
 ```c
-//同 
+//?
 ```
