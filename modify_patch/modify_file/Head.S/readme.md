@@ -48,7 +48,7 @@ _start:
 csrrw x0, sscratch, x0 //a4 /* zero sscratch for the init task */ b 
 ```
 
-## 11.0.0 vspace与10.1.1相差不大，改的地方如下
+## 11.0.0 相差很大
 
 ```c
 _start:
