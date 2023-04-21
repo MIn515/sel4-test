@@ -60,10 +60,11 @@ extern pte_t kernel_image_level3_pt[BIT(PT_INDEX_BITS)];
 
 
 <details>
-<summary> new 未修改</summary>
+<summary> 11.0.0 未修改</summary>
 
 ```c
-#pragma once
+#ifndef __ARCH_MODEL_STATEDATA_H
+#define __ARCH_MODEL_STATEDATA_H
 
 #include <config.h>
 #include <types.h>
@@ -84,13 +85,12 @@ extern asid_pool_t *riscvKSASIDTable[BIT(asidHighBits)];
 /* Kernel Page Tables */
 extern pte_t kernel_root_pageTable[BIT(PT_INDEX_BITS)] VISIBLE;
 
-/* We need to introduce a level2 pagetable in order to map OpenSBI to a separate
+/* We need to introduce a level2 pagetable in order to map the BBL to a separate
  * page entry to avoid PMP exception. */
 #if __riscv_xlen != 32
 extern pte_t kernel_image_level2_pt[BIT(PT_INDEX_BITS)];
-extern pte_t kernel_image_level2_dev_pt[BIT(PT_INDEX_BITS)];
-#elif defined(CONFIG_KERNEL_LOG_BUFFER)
-extern pte_t kernel_image_level2_log_buffer_pt[BIT(PT_INDEX_BITS)];
+#endif
+
 #endif
 ```
 
@@ -101,26 +101,15 @@ extern pte_t kernel_image_level2_log_buffer_pt[BIT(PT_INDEX_BITS)];
 <summary> new 手动修改</summary>
 
 ```c
-
-
 /* Kernel Page Tables */
-extern pte_t kernel_root_pageTable[BIT(PT_INDEX_BITS)] VISIBLE;
-//+++
-extern pte_t kernel_root_level2_pageTable[BIT(PT_INDEX_BITS)] VISIBLE;
+extern pte_t kernel_root_pageTable[BIT(PT_INDEX_BITS)] VISIBLE; 
+extern pte_t kernel_root_level2_pageTable[BIT(PT_INDEX_BITS)] VISIBLE;  //+++
 
-
-/* We need to introduce a level2 pagetable in order to map OpenSBI to a separate
+/* We need to introduce a level2 pagetable in order to map the BBL to a separate
  * page entry to avoid PMP exception. */
 #if __riscv_xlen != 32
 extern pte_t kernel_image_level2_pt[BIT(PT_INDEX_BITS)];
-//+++
-extern pte_t kernel_image_level3_pt[BIT(PT_INDEX_BITS)];
-
-extern pte_t kernel_image_level2_dev_pt[BIT(PT_INDEX_BITS)];
-// ？？ dev_pt 是否要修改
-#elif defined(CONFIG_KERNEL_LOG_BUFFER)
-extern pte_t kernel_image_level2_log_buffer_pt[BIT(PT_INDEX_BITS)];
-#endif
+extern pte_t kernel_image_level3_pt[BIT(PT_INDEX_BITS)];  //+++
 ```
 
 </details>
