@@ -1,6 +1,6 @@
 ## 修改策略
 
-1. 
+1.  ✔️
 ```c++
 /* Kernel Page Tables */
 pte_t kernel_root_pageTable[BIT(PT_INDEX_BITS)] ALIGN_BSS(BIT(seL4_PageTableBits));
