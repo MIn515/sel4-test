@@ -246,7 +246,7 @@ index 5d7f4977..39841030 100644
  </details>
  
  <details>
-<summary>8. diff --git src/arch/riscv/kernel/boot.c src/arch/riscv/kernel/boot.c ⭐</summary>
+<summary>8. diff --git src/arch/riscv/kernel/boot.c src/arch/riscv/kernel/boot.c </summary>
  
  ```
 diff --git src/arch/riscv/kernel/boot.c src/arch/riscv/kernel/boot.c
