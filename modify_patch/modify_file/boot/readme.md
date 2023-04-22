@@ -101,3 +101,8 @@ void init_kernel(
 
 #endif
 ```
+
+```c++
+#ifdef ENABLE_SMP_SUPPORT
+// 删掉 SMP_SUPPORT
+```
