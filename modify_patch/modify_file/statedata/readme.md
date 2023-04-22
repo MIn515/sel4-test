@@ -108,6 +108,7 @@ extern pte_t kernel_root_level2_pageTable[BIT(PT_INDEX_BITS)] VISIBLE;  //+++
 /* We need to introduce a level2 pagetable in order to map the BBL to a separate
  * page entry to avoid PMP exception. */
 #if __riscv_xlen != 32
+//等价于10.1.1 中的 #ifdef RISCV_KERNEL_WINDOW_LEVEL2_PT
 extern pte_t kernel_image_level2_pt[BIT(PT_INDEX_BITS)];
 extern pte_t kernel_image_level3_pt[BIT(PT_INDEX_BITS)];  //+++
 ```
