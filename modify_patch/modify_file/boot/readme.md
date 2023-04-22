@@ -97,11 +97,6 @@ void init_kernel(
     paddr_t keystone_free_start,
     vptr_t keystone_utm_ptr,
     uint64_t keystone_utm_size
-#ifdef ENABLE_SMP_SUPPORT
-    ,
-    word_t hart_id,
-    word_t core_id
-#endif
 );
 
 #endif
