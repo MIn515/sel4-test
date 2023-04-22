@@ -10,7 +10,7 @@
 8. ✔️：修改 init_plat()
 9. ✔️：修改及增加 init_freemem，
 10. ✔️ ：增加：printf("Booting all finished, dropped to user space\n");后面
-
+11. 
 
 ```c++
 #ifdef ENABLE_SMP_SUPPORT
