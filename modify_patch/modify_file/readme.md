@@ -582,7 +582,7 @@ index c68f4411..daf361da 100644
  </details>
  
  <details>
-<summary>11. diff --git src/plat/spike/machine/fdt.c src/plat/spike/machine/fdt.c ⭐ </summary>
+<summary>11. diff --git src/plat/spike/machine/fdt.c src/plat/spike/machine/fdt.c ⭐⭐ </summary>
  
  ```
 diff --git src/plat/spike/machine/fdt.c src/plat/spike/machine/fdt.c
@@ -611,7 +611,7 @@ index 0b547a36..89c1ae5e 100644
  </details>
  
  <details>
-<summary>12. diff --git src/plat/spike/machine/hardware.c src/plat/spike/machine/hardware.c ⭐ </summary>
+<summary>12. diff --git src/plat/spike/machine/hardware.c src/plat/spike/machine/hardware.c ⭐⭐ </summary>
  
  ```
 diff --git src/plat/spike/machine/hardware.c src/plat/spike/machine/hardware.c
