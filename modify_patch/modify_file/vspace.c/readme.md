@@ -1,8 +1,8 @@
 ## 修改策略
 
 1.✔️：增加 keystone_map_kernel_window 函数
-2.❌：修改 map_kernel_window 函数
-- 
+2.✔️：修改 map_kernel_window 函数
+
 ```c++
 /* first we map in memory from PADDR_BASE */
     word_t paddr = PADDR_BASE; /* 0x80000000UL */
