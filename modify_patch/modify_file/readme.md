@@ -222,7 +222,7 @@ index 5f59ae32..c8df182d 100644
  </details>
  
  <details>
-<summary>7. diff --git src/arch/riscv/head.S src/arch/riscv/head.S</summary>
+<summary>7. diff --git src/arch/riscv/head.S src/arch/riscv/head.S  ⭐ </summary>
  
  ```
 diff --git src/arch/riscv/head.S src/arch/riscv/head.S
