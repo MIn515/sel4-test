@@ -29,10 +29,6 @@
 #include <plat/machine/hardware.h>
 #include <machine.h>
 
-/* Keystone Physical Addresses */
-word_t keystone_paddr_base;
-word_t keystone_paddr_load;
-
 /* pointer to the end of boot code/data in kernel image */
 /* need a fake array to get the pointer from the linker script */
 extern char ki_boot_end[1];
@@ -138,9 +134,8 @@ BOOT_CODE static void init_cpu(void)
 
 /* This and only this function initialises the platform. It does NOT initialise any kernel state. */
 
-BOOT_CODE static void init_plat(paddr_t memstart, uint64_t memsize)
+BOOT_CODE static void init_plat(void)
 {
-    keystoneFDT(memstart, memsize);
     initIRQController();
 }
 
@@ -175,39 +170,16 @@ BOOT_CODE static void release_secondary_cores(void)
 /* Main kernel initialisation function. */
 
 static BOOT_CODE bool_t try_init_kernel(
-    uint64_t dummy,
-    paddr_t keystone_dram_base,
-    uint64_t keystone_dram_size,
-    paddr_t keystone_runtime_start,
-    paddr_t keystone_user_start,
-    paddr_t keystone_free_start,
-    vptr_t  keystone_utm_ptr,
-    uint64_t  keystone_utm_size
+    paddr_t ui_p_reg_start,
+    paddr_t ui_p_reg_end,
+    uint32_t pv_offset,
+    vptr_t  v_entry
 )
 {
-    (void) dummy;
     cap_t root_cnode_cap;
     cap_t it_pd_cap;
     cap_t it_ap_cap;
     cap_t ipcbuf_cap;
-
-
-    /* SeL4 Parameters */
-    paddr_t ui_p_reg_start;
-    paddr_t ui_p_reg_end;
-    uint32_t pv_offset;
-    vptr_t v_entry;
-    /* Keystone Parameters */
-    v_entry = read_sepc();
-    ui_p_reg_start = keystone_user_start;
-    ui_p_reg_end = keystone_free_start;
-
-    pv_offset = keystone_user_start - 0x10000;
-
-    keystone_paddr_base = keystone_dram_base;
-    keystone_paddr_load = keystone_runtime_start;
-
-
     p_region_t boot_mem_reuse_p_reg = ((p_region_t) {
         kpptr_to_paddr((void *)KERNEL_ELF_BASE), kpptr_to_paddr(ki_boot_end)
     });
@@ -232,28 +204,16 @@ static BOOT_CODE bool_t try_init_kernel(
     it_v_reg.start = ui_v_reg.start;
     it_v_reg.end = bi_frame_vptr + BIT(PAGE_BITS);
 
-    keystone_map_kernel_window(keystone_dram_base, keystone_dram_base + keystone_dram_size);
-
     map_kernel_window();
 
     /* initialise the CPU */
     init_cpu();
 
     /* initialize the platform */
-    init_plat(keystone_dram_base, keystone_dram_size);
+    init_plat();
 
     /* make the free memory available to alloc_region() */
-    init_freemem(ui_reg, dtb_reg); // this does nothing actually
-
-    region_t cur_reg = ((region_t) {
-        PPTR_BASE, PPTR_BASE + keystone_dram_size
-        });
-    region_t res_reg = paddr_to_pptr_reg((p_region_t) {
-        keystone_runtime_start, keystone_free_start
-        });
-    cur_reg = insert_region_excluded(cur_reg, res_reg);
-    if(cur_reg.start < cur_reg.end)
-      assert(insert_region(cur_reg));
+    arch_init_freemem(ui_reg, it_v_reg);
 
     /* create the root cnode */
     root_cnode_cap = create_root_cnode();
@@ -360,34 +320,39 @@ static BOOT_CODE bool_t try_init_kernel(
     SMP_COND_STATEMENT(release_secondary_cores());
 
     printf("Booting all finished, dropped to user space\n");
-
-    // turning on cycle counter
-    unsigned long v = 0x7;
-    asm volatile ("csrw scounteren, %0" : :"rK" (v));
-
     return true;
 }
 
 BOOT_CODE VISIBLE void init_kernel(
-    uint64_t dummy,
-    paddr_t keystone_dram_base,
-    uint64_t keystone_dram_size,
-    paddr_t keystone_runtime_start,
-    paddr_t keystone_user_start,
-    paddr_t keystone_free_start,
-    vptr_t  keystone_utm_ptr,
-    uint64_t  keystone_utm_size
+    paddr_t ui_p_reg_start,
+    paddr_t ui_p_reg_end,
+    sword_t pv_offset,
+    vptr_t  v_entry
+#ifdef ENABLE_SMP_SUPPORT
+    ,
+    word_t hart_id,
+    word_t core_id
+#endif
 )
 {
-    bool_t result = try_init_kernel(dummy,
-                                    keystone_dram_base,
-                                    keystone_dram_size,
-                                    keystone_runtime_start,
-                                    keystone_user_start,
-                                    keystone_free_start,
-                                    keystone_utm_ptr,
-                                    keystone_utm_size);
+#ifdef ENABLE_SMP_SUPPORT
+    bool_t result;
 
+    add_hart_to_core_map(hart_id, core_id);
+    if (core_id == 0) {
+        result = try_init_kernel(ui_p_reg_start,
+                                 ui_p_reg_end,
+                                 pv_offset,
+                                 v_entry);
+    } else {
+        result = try_init_kernel_secondary_core(hart_id, core_id);
+    }
+#else
+    bool_t result = try_init_kernel(ui_p_reg_start,
+                                    ui_p_reg_end,
+                                    pv_offset,
+                                    v_entry);
+#endif
     if (!result) {
         fail("Kernel init failed for some reason :(");
     }
