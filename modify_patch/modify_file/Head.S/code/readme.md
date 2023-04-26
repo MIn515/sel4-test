@@ -32,8 +32,10 @@ _start:
 /* 获取 hartid 存储在 a4 中 */
   /* hartid is in a4 */
 
-/* 设置内核栈的大小为 CONFIG_KERNEL_STACK_BITS，然后乘以 hartid */
+/* 设置内核栈的大小为 CONFIG_KERNEL_STACK_BITS，然后乘以 hartid；为内核栈分配一定的空间 */
+// li :将立即数加载到寄存器
   li  sp, BIT(CONFIG_KERNEL_STACK_BITS)
+// sp 寄存器（栈指针寄存器）的值乘以 a4 寄存器的值，并将结果存储回 sp 寄存器中(将栈指针向上或向下调整 a4 倍，从而分配或释放 a4 个 32 位字的栈空间)
   mul sp, sp, a4
 
 /* 获取 kernel_stack_alloc 的地址，加上 CONFIG_KERNEL_STACK_BITS，然后把结果保存在 x1 中 */
@@ -43,6 +45,7 @@ _start:
   add sp, sp, x1
 
 /* 把 a4 的值保存到 sscratch 寄存器中，以便 init_kernel 使用 */
+// 先把 特权级下的 sscratch 寄存器写入到 a4，再把 x0 寄存器值写入到 sscratch ， x0寄存器是伪寄存器，恒为0，因此，sscratch被清零
   csrrw x0, sscratch, a4 /* zero sscratch for the init task */
 
 /* 跳转到 init_kernel 函数 */
