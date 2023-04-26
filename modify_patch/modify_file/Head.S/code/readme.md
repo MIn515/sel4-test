@@ -35,8 +35,8 @@ _start:
 /* 设置内核栈的大小为 CONFIG_KERNEL_STACK_BITS，然后乘以 hartid；为内核栈分配一定的空间 */
 /* li :将立即数加载到寄存器 */
   li  sp, BIT(CONFIG_KERNEL_STACK_BITS)
-/* sp 寄存器（栈指针寄存器）的值乘以 a4 寄存器的值，并将结果存储回 sp 寄存器中
-      (将栈指针向上或向下调整 a4 倍，从而分配或释放 a4 个 32 位字的栈空间) */
+/* sp 寄存器（栈指针寄存器）的值乘以 a4 寄存器的值，并将结果存储回 sp 寄存器中 */
+/*  (将栈指针向上或向下调整 a4 倍，从而分配或释放 a4 个 32 位字的栈空间) */
   mul sp, sp, a4
 
 /* 获取 kernel_stack_alloc 的地址，加上 CONFIG_KERNEL_STACK_BITS，然后把结果保存在 x1 中 */
