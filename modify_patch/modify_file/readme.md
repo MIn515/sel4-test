@@ -639,6 +639,13 @@ index eb6da7ea..ae39c0b4 100644
  
  </details>
 
+---
+
+- 11.0.0对SMP的支持；keystone 是否支持？ 
+- 此版修改，设置SeL4 默认不支持SMP(CONFIG_MAX_NUM_NODES = 1.)
+> 涉及到的文件 `Head.S`
+
+---
   
 <details>
 <summary>补丁输出备份</summary>
