@@ -643,7 +643,7 @@ index eb6da7ea..ae39c0b4 100644
 
 - 11.0.0对SMP的支持；keystone 是否支持？ 
 - 此版修改，设置SeL4 默认不支持SMP(CONFIG_MAX_NUM_NODES = 1.)
-> 涉及到的文件 `Head.S`
+> 涉及到的文件 `Head.S`的`` 、`boot.c、boot.h`的`ENABLE_SMP_SUPPORT` `hart_id`、
 
 ---
   
