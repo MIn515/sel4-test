@@ -1,4 +1,4 @@
-```plain
+```S
 #include <config.h>
 #include <util.h>
 
@@ -54,7 +54,7 @@ _start:
 
 ```
 
-```plain
+```S
 #include <config.h>
 #include <util.h>
 
