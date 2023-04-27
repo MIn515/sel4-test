@@ -1,3 +1,13 @@
+## 与 hardware.c 处理方法不一样
+> `hardware.c`在`riscv/arch/machine`里面
+> 但 `riscv/arch/machine` 里的`hardware.h` ，两个版本基本一样
+
+
+
+
+
+## 10.1.1 补丁
+
 <details>
   <summary>patch</summary>
   
