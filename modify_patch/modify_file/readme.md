@@ -1,6 +1,11 @@
 - ⭐⭐：无此文件
 - ⭐：改动较大
 
+- ✔️：基本确定
+- ❌：手动修改 
+
+
+
 ##  补丁修改 
 
 <details>
@@ -38,7 +43,7 @@ index 053c1f3f..f597664e 100644
 
 
 <details>
-<summary>2. diff --git include/arch/riscv/arch/kernel/vspace.h include/arch/riscv/arch/kernel/vspace.h</summary>
+<summary> ✔️ 2. diff --git include/arch/riscv/arch/kernel/vspace.h include/arch/riscv/arch/kernel/vspace.h</summary>
  
  ```
 diff --git include/arch/riscv/arch/kernel/vspace.h include/arch/riscv/arch/kernel/vspace.h
@@ -59,7 +64,7 @@ index 7a59b075..6393ca33 100644
  
  
  <details>
-<summary>3. diff --git include/arch/riscv/arch/model/statedata.h include/arch/riscv/arch/model/statedata.h</summary>
+<summary> ✔️ 3. diff --git include/arch/riscv/arch/model/statedata.h include/arch/riscv/arch/model/statedata.h</summary>
  
  ```
 diff --git include/arch/riscv/arch/model/statedata.h include/arch/riscv/arch/model/statedata.h
@@ -88,7 +93,7 @@ index 5559b276..c6cecfac 100644
  
  
  <details>
-<summary>4. diff --git include/arch/riscv/arch/sbi.h include/arch/riscv/arch/sbi.h</summary>
+<summary> ✔️ 4. diff --git include/arch/riscv/arch/sbi.h include/arch/riscv/arch/sbi.h</summary>
  
  ```
 diff --git include/arch/riscv/arch/sbi.h include/arch/riscv/arch/sbi.h
@@ -429,7 +434,7 @@ index f00c4b66..8449e884 100644
  </details>
  
  <details>
-<summary>9. diff --git src/arch/riscv/kernel/vspace.c src/arch/riscv/kernel/vspace.c</summary>
+<summary>  9. diff --git src/arch/riscv/kernel/vspace.c src/arch/riscv/kernel/vspace.c</summary>
  
  ```
 diff --git src/arch/riscv/kernel/vspace.c src/arch/riscv/kernel/vspace.c
@@ -561,7 +566,7 @@ index 6e467543..6d576d8c 100644
  </details>
  
  <details>
-<summary>10. diff --git src/arch/riscv/model/statedata.c src/arch/riscv/model/statedata.c</summary>
+<summary> ✔️ 10. diff --git src/arch/riscv/model/statedata.c src/arch/riscv/model/statedata.c</summary>
  
  ```
 diff --git src/arch/riscv/model/statedata.c src/arch/riscv/model/statedata.c
@@ -611,7 +616,7 @@ index 0b547a36..89c1ae5e 100644
  </details>
  
  <details>
-<summary>12. diff --git src/plat/spike/machine/hardware.c src/plat/spike/machine/hardware.c ⭐⭐ </summary>
+<summary> ✔️ 12. diff --git src/plat/spike/machine/hardware.c src/plat/spike/machine/hardware.c ⭐⭐ </summary>
  
  ```
 diff --git src/plat/spike/machine/hardware.c src/plat/spike/machine/hardware.c
