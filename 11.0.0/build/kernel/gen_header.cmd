@@ -1,0 +1,1 @@
+regen /home/wangmin/sel4-test/temp/11.0.0/build/kernel/gen_headers/plat/machine/devices_gen.h /home/wangmin/sel4-test/temp/11.0.0/build/kernel/kernel.dtb;/home/wangmin/sel4-test/temp/11.0.0/kernel/tools/hardware.yml;/home/wangmin/sel4-test/temp/11.0.0/kernel/tools/hardware_schema.yml;/home/wangmin/sel4-test/temp/11.0.0/kernel/tools/hardware_gen.py

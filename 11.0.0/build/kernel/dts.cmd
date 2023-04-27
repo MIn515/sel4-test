@@ -1,0 +1,1 @@
+regen /home/wangmin/sel4-test/temp/11.0.0/build/kernel/kernel.dtb /home/wangmin/sel4-test/temp/11.0.0/kernel/tools/dts/spike.dts

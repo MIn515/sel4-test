@@ -1,0 +1,279 @@
+The target system is: Generic -  - seL4CPU
+The host system is: Linux - 5.4.0-146-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /home/wangmin/keystone0.4/riscv/bin/riscv64-unknown-linux-gnu-gcc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/wangmin/sel4-test/temp/11.0.0/build/CMakeFiles/3.16.2/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /home/wangmin/keystone0.4/riscv/bin/riscv64-unknown-linux-gnu-g++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/wangmin/sel4-test/temp/11.0.0/build/CMakeFiles/3.16.2/CompilerIdCXX/a.out"
+
+Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+riscv64-unknown-linux-gnu-gcc (GCC) 7.2.0
+Copyright (C) 2017 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/wangmin/sel4-test/temp/11.0.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_886a2 && [1/2] Building C object CMakeFiles/cmTC_886a2.dir/testCCompiler.c.obj
+[2/2] Linking C static library libcmTC_886a2.a
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/wangmin/sel4-test/temp/11.0.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_3119d && [1/2] Building C object CMakeFiles/cmTC_3119d.dir/CMakeCCompilerABI.c.obj
+Using built-in specs.
+COLLECT_GCC=/home/wangmin/keystone0.4/riscv/bin/riscv64-unknown-linux-gnu-gcc
+Target: riscv64-unknown-linux-gnu
+Configured with: /home/wangmin/riscv-toolchain/riscv-gnu-toolchain/riscv-gcc/configure --target=riscv64-unknown-linux-gnu --prefix=/opt/riscv64 --with-sysroot=/opt/riscv64/sysroot --with-system-zlib --enable-shared --enable-tls --enable-languages=c,c++,fortran --disable-libmudflap --disable-libssp --disable-libquadmath --disable-nls --disable-bootstrap --src=.././riscv-gcc --enable-checking=yes --enable-multilib --with-abi=lp64 --with-arch=rv64imafdc
+Thread model: posix
+gcc version 7.2.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3119d.dir/CMakeCCompilerABI.c.obj' '-c' '-march=rv64imafdc' '-mabi=lp64'
+ /home/wangmin/keystone0.4/riscv/bin/../libexec/gcc/riscv64-unknown-linux-gnu/7.2.0/cc1 -quiet -v -imultilib lib64/lp64 -iprefix /home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/ -isysroot /home/wangmin/sel4-test/temp/11.0.0/build/CMakeFiles/CMakeTmp /usr/local/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -march=rv64imafdc -mabi=lp64 -auxbase-strip CMakeFiles/cmTC_3119d.dir/CMakeCCompilerABI.c.obj -version -o /tmp/cc40E0BB.s
+GNU C11 (GCC) version 7.2.0 (riscv64-unknown-linux-gnu)
+	compiled by GNU C version 7.5.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version none
+GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096
+ignoring duplicate directory "/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/include"
+ignoring nonexistent directory "/home/wangmin/sel4-test/temp/11.0.0/build/CMakeFiles/CMakeTmp/usr/local/include"
+ignoring duplicate directory "/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/include-fixed"
+ignoring duplicate directory "/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/include"
+ignoring nonexistent directory "/home/wangmin/sel4-test/temp/11.0.0/build/CMakeFiles/CMakeTmp/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/include
+ /home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/include-fixed
+ /home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/include
+End of search list.
+GNU C11 (GCC) version 7.2.0 (riscv64-unknown-linux-gnu)
+	compiled by GNU C version 7.5.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version none
+GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096
+Compiler executable checksum: 18e9c85f92c4a42a6da1424642691786
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3119d.dir/CMakeCCompilerABI.c.obj' '-c' '-march=rv64imafdc' '-mabi=lp64'
+ /home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/bin/as -v --traditional-format -march=rv64imafdc -mabi=lp64 -o CMakeFiles/cmTC_3119d.dir/CMakeCCompilerABI.c.obj /tmp/cc40E0BB.s
+GNU assembler version 2.29 (riscv64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.29
+COMPILER_PATH=/home/wangmin/keystone0.4/riscv/bin/../libexec/gcc/riscv64-unknown-linux-gnu/7.2.0/:/home/wangmin/keystone0.4/riscv/bin/../libexec/gcc/:/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/bin/
+LIBRARY_PATH=/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/lib64/lp64/:/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/lib/../lib64/lp64/:/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/:/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/:/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3119d.dir/CMakeCCompilerABI.c.obj' '-c' '-march=rv64imafdc' '-mabi=lp64'
+[2/2] Linking C static library libcmTC_3119d.a
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/include]
+    add: [/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/include-fixed]
+    add: [/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/include]
+  end of search list found
+  collapse include dir [/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/include] ==> [/home/wangmin/keystone0.4/riscv/lib/gcc/riscv64-unknown-linux-gnu/7.2.0/include]
+  collapse include dir [/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/include-fixed] ==> [/home/wangmin/keystone0.4/riscv/lib/gcc/riscv64-unknown-linux-gnu/7.2.0/include-fixed]
+  collapse include dir [/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/include] ==> [/home/wangmin/keystone0.4/riscv/riscv64-unknown-linux-gnu/include]
+  implicit include dirs: [/home/wangmin/keystone0.4/riscv/lib/gcc/riscv64-unknown-linux-gnu/7.2.0/include;/home/wangmin/keystone0.4/riscv/lib/gcc/riscv64-unknown-linux-gnu/7.2.0/include-fixed;/home/wangmin/keystone0.4/riscv/riscv64-unknown-linux-gnu/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(riscv64-unknown-linux-gnu-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/wangmin/sel4-test/temp/11.0.0/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/ninja cmTC_3119d && [1/2] Building C object CMakeFiles/cmTC_3119d.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/home/wangmin/keystone0.4/riscv/bin/riscv64-unknown-linux-gnu-gcc]
+  ignore line: [Target: riscv64-unknown-linux-gnu]
+  ignore line: [Configured with: /home/wangmin/riscv-toolchain/riscv-gnu-toolchain/riscv-gcc/configure --target=riscv64-unknown-linux-gnu --prefix=/opt/riscv64 --with-sysroot=/opt/riscv64/sysroot --with-system-zlib --enable-shared --enable-tls --enable-languages=c c++ fortran --disable-libmudflap --disable-libssp --disable-libquadmath --disable-nls --disable-bootstrap --src=.././riscv-gcc --enable-checking=yes --enable-multilib --with-abi=lp64 --with-arch=rv64imafdc]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 7.2.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3119d.dir/CMakeCCompilerABI.c.obj' '-c' '-march=rv64imafdc' '-mabi=lp64']
+  ignore line: [ /home/wangmin/keystone0.4/riscv/bin/../libexec/gcc/riscv64-unknown-linux-gnu/7.2.0/cc1 -quiet -v -imultilib lib64/lp64 -iprefix /home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/ -isysroot /home/wangmin/sel4-test/temp/11.0.0/build/CMakeFiles/CMakeTmp /usr/local/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -march=rv64imafdc -mabi=lp64 -auxbase-strip CMakeFiles/cmTC_3119d.dir/CMakeCCompilerABI.c.obj -version -o /tmp/cc40E0BB.s]
+  ignore line: [GNU C11 (GCC) version 7.2.0 (riscv64-unknown-linux-gnu)]
+  ignore line: [	compiled by GNU C version 7.5.0  GMP version 6.1.2  MPFR version 4.0.1  MPC version 1.1.0  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096]
+  ignore line: [ignoring duplicate directory "/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/include"]
+  ignore line: [ignoring nonexistent directory "/home/wangmin/sel4-test/temp/11.0.0/build/CMakeFiles/CMakeTmp/usr/local/include"]
+  ignore line: [ignoring duplicate directory "/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/include-fixed"]
+  ignore line: [ignoring duplicate directory "/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/include"]
+  ignore line: [ignoring nonexistent directory "/home/wangmin/sel4-test/temp/11.0.0/build/CMakeFiles/CMakeTmp/usr/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/include]
+  ignore line: [ /home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/include-fixed]
+  ignore line: [ /home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C11 (GCC) version 7.2.0 (riscv64-unknown-linux-gnu)]
+  ignore line: [	compiled by GNU C version 7.5.0  GMP version 6.1.2  MPFR version 4.0.1  MPC version 1.1.0  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096]
+  ignore line: [Compiler executable checksum: 18e9c85f92c4a42a6da1424642691786]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3119d.dir/CMakeCCompilerABI.c.obj' '-c' '-march=rv64imafdc' '-mabi=lp64']
+  ignore line: [ /home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/bin/as -v --traditional-format -march=rv64imafdc -mabi=lp64 -o CMakeFiles/cmTC_3119d.dir/CMakeCCompilerABI.c.obj /tmp/cc40E0BB.s]
+  ignore line: [GNU assembler version 2.29 (riscv64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.29]
+  ignore line: [COMPILER_PATH=/home/wangmin/keystone0.4/riscv/bin/../libexec/gcc/riscv64-unknown-linux-gnu/7.2.0/:/home/wangmin/keystone0.4/riscv/bin/../libexec/gcc/:/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/bin/]
+  ignore line: [LIBRARY_PATH=/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/lib64/lp64/:/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/lib/../lib64/lp64/:/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/:/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/:/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3119d.dir/CMakeCCompilerABI.c.obj' '-c' '-march=rv64imafdc' '-mabi=lp64']
+  ignore line: [[2/2] Linking C static library libcmTC_3119d.a]
+  ignore line: []
+  ignore line: []
+  implicit libs: []
+  implicit dirs: []
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/wangmin/sel4-test/temp/11.0.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_462e9 && [1/2] Building CXX object CMakeFiles/cmTC_462e9.dir/testCXXCompiler.cxx.obj
+[2/2] Linking CXX static library libcmTC_462e9.a
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/wangmin/sel4-test/temp/11.0.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_48ba3 && [1/2] Building CXX object CMakeFiles/cmTC_48ba3.dir/CMakeCXXCompilerABI.cpp.obj
+Using built-in specs.
+COLLECT_GCC=/home/wangmin/keystone0.4/riscv/bin/riscv64-unknown-linux-gnu-g++
+Target: riscv64-unknown-linux-gnu
+Configured with: /home/wangmin/riscv-toolchain/riscv-gnu-toolchain/riscv-gcc/configure --target=riscv64-unknown-linux-gnu --prefix=/opt/riscv64 --with-sysroot=/opt/riscv64/sysroot --with-system-zlib --enable-shared --enable-tls --enable-languages=c,c++,fortran --disable-libmudflap --disable-libssp --disable-libquadmath --disable-nls --disable-bootstrap --src=.././riscv-gcc --enable-checking=yes --enable-multilib --with-abi=lp64 --with-arch=rv64imafdc
+Thread model: posix
+gcc version 7.2.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_48ba3.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-march=rv64imafdc' '-mabi=lp64'
+ /home/wangmin/keystone0.4/riscv/bin/../libexec/gcc/riscv64-unknown-linux-gnu/7.2.0/cc1plus -quiet -v -imultilib lib64/lp64 -iprefix /home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/ -isysroot /home/wangmin/sel4-test/temp/11.0.0/build/CMakeFiles/CMakeTmp -D_GNU_SOURCE /usr/local/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -march=rv64imafdc -mabi=lp64 -auxbase-strip CMakeFiles/cmTC_48ba3.dir/CMakeCXXCompilerABI.cpp.obj -version -o /tmp/cciBrSMM.s
+GNU C++14 (GCC) version 7.2.0 (riscv64-unknown-linux-gnu)
+	compiled by GNU C version 7.5.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version none
+GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096
+ignoring duplicate directory "/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/include/c++/7.2.0"
+ignoring duplicate directory "/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/include/c++/7.2.0/riscv64-unknown-linux-gnu/lib64/lp64"
+ignoring duplicate directory "/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/include/c++/7.2.0/backward"
+ignoring duplicate directory "/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/include"
+ignoring nonexistent directory "/home/wangmin/sel4-test/temp/11.0.0/build/CMakeFiles/CMakeTmp/usr/local/include"
+ignoring duplicate directory "/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/include-fixed"
+ignoring duplicate directory "/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/include"
+ignoring nonexistent directory "/home/wangmin/sel4-test/temp/11.0.0/build/CMakeFiles/CMakeTmp/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/include/c++/7.2.0
+ /home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/include/c++/7.2.0/riscv64-unknown-linux-gnu/lib64/lp64
+ /home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/include/c++/7.2.0/backward
+ /home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/include
+ /home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/include-fixed
+ /home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/include
+End of search list.
+GNU C++14 (GCC) version 7.2.0 (riscv64-unknown-linux-gnu)
+	compiled by GNU C version 7.5.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version none
+GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096
+Compiler executable checksum: 2b3ef4092ceddcdb17ce3a8fadbcc1e4
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_48ba3.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-march=rv64imafdc' '-mabi=lp64'
+ /home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/bin/as -v --traditional-format -march=rv64imafdc -mabi=lp64 -o CMakeFiles/cmTC_48ba3.dir/CMakeCXXCompilerABI.cpp.obj /tmp/cciBrSMM.s
+GNU assembler version 2.29 (riscv64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.29
+COMPILER_PATH=/home/wangmin/keystone0.4/riscv/bin/../libexec/gcc/riscv64-unknown-linux-gnu/7.2.0/:/home/wangmin/keystone0.4/riscv/bin/../libexec/gcc/:/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/bin/
+LIBRARY_PATH=/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/lib64/lp64/:/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/lib/../lib64/lp64/:/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/:/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/:/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_48ba3.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-march=rv64imafdc' '-mabi=lp64'
+[2/2] Linking CXX static library libcmTC_48ba3.a
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/include/c++/7.2.0]
+    add: [/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/include/c++/7.2.0/riscv64-unknown-linux-gnu/lib64/lp64]
+    add: [/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/include/c++/7.2.0/backward]
+    add: [/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/include]
+    add: [/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/include-fixed]
+    add: [/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/include]
+  end of search list found
+  collapse include dir [/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/include/c++/7.2.0] ==> [/home/wangmin/keystone0.4/riscv/riscv64-unknown-linux-gnu/include/c++/7.2.0]
+  collapse include dir [/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/include/c++/7.2.0/riscv64-unknown-linux-gnu/lib64/lp64] ==> [/home/wangmin/keystone0.4/riscv/riscv64-unknown-linux-gnu/include/c++/7.2.0/riscv64-unknown-linux-gnu/lib64/lp64]
+  collapse include dir [/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/include/c++/7.2.0/backward] ==> [/home/wangmin/keystone0.4/riscv/riscv64-unknown-linux-gnu/include/c++/7.2.0/backward]
+  collapse include dir [/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/include] ==> [/home/wangmin/keystone0.4/riscv/lib/gcc/riscv64-unknown-linux-gnu/7.2.0/include]
+  collapse include dir [/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/include-fixed] ==> [/home/wangmin/keystone0.4/riscv/lib/gcc/riscv64-unknown-linux-gnu/7.2.0/include-fixed]
+  collapse include dir [/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/include] ==> [/home/wangmin/keystone0.4/riscv/riscv64-unknown-linux-gnu/include]
+  implicit include dirs: [/home/wangmin/keystone0.4/riscv/riscv64-unknown-linux-gnu/include/c++/7.2.0;/home/wangmin/keystone0.4/riscv/riscv64-unknown-linux-gnu/include/c++/7.2.0/riscv64-unknown-linux-gnu/lib64/lp64;/home/wangmin/keystone0.4/riscv/riscv64-unknown-linux-gnu/include/c++/7.2.0/backward;/home/wangmin/keystone0.4/riscv/lib/gcc/riscv64-unknown-linux-gnu/7.2.0/include;/home/wangmin/keystone0.4/riscv/lib/gcc/riscv64-unknown-linux-gnu/7.2.0/include-fixed;/home/wangmin/keystone0.4/riscv/riscv64-unknown-linux-gnu/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(riscv64-unknown-linux-gnu-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/wangmin/sel4-test/temp/11.0.0/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/ninja cmTC_48ba3 && [1/2] Building CXX object CMakeFiles/cmTC_48ba3.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/home/wangmin/keystone0.4/riscv/bin/riscv64-unknown-linux-gnu-g++]
+  ignore line: [Target: riscv64-unknown-linux-gnu]
+  ignore line: [Configured with: /home/wangmin/riscv-toolchain/riscv-gnu-toolchain/riscv-gcc/configure --target=riscv64-unknown-linux-gnu --prefix=/opt/riscv64 --with-sysroot=/opt/riscv64/sysroot --with-system-zlib --enable-shared --enable-tls --enable-languages=c c++ fortran --disable-libmudflap --disable-libssp --disable-libquadmath --disable-nls --disable-bootstrap --src=.././riscv-gcc --enable-checking=yes --enable-multilib --with-abi=lp64 --with-arch=rv64imafdc]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 7.2.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_48ba3.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-march=rv64imafdc' '-mabi=lp64']
+  ignore line: [ /home/wangmin/keystone0.4/riscv/bin/../libexec/gcc/riscv64-unknown-linux-gnu/7.2.0/cc1plus -quiet -v -imultilib lib64/lp64 -iprefix /home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/ -isysroot /home/wangmin/sel4-test/temp/11.0.0/build/CMakeFiles/CMakeTmp -D_GNU_SOURCE /usr/local/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -march=rv64imafdc -mabi=lp64 -auxbase-strip CMakeFiles/cmTC_48ba3.dir/CMakeCXXCompilerABI.cpp.obj -version -o /tmp/cciBrSMM.s]
+  ignore line: [GNU C++14 (GCC) version 7.2.0 (riscv64-unknown-linux-gnu)]
+  ignore line: [	compiled by GNU C version 7.5.0  GMP version 6.1.2  MPFR version 4.0.1  MPC version 1.1.0  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096]
+  ignore line: [ignoring duplicate directory "/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/include/c++/7.2.0"]
+  ignore line: [ignoring duplicate directory "/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/include/c++/7.2.0/riscv64-unknown-linux-gnu/lib64/lp64"]
+  ignore line: [ignoring duplicate directory "/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/include/c++/7.2.0/backward"]
+  ignore line: [ignoring duplicate directory "/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/include"]
+  ignore line: [ignoring nonexistent directory "/home/wangmin/sel4-test/temp/11.0.0/build/CMakeFiles/CMakeTmp/usr/local/include"]
+  ignore line: [ignoring duplicate directory "/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/include-fixed"]
+  ignore line: [ignoring duplicate directory "/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/include"]
+  ignore line: [ignoring nonexistent directory "/home/wangmin/sel4-test/temp/11.0.0/build/CMakeFiles/CMakeTmp/usr/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/include/c++/7.2.0]
+  ignore line: [ /home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/include/c++/7.2.0/riscv64-unknown-linux-gnu/lib64/lp64]
+  ignore line: [ /home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/include/c++/7.2.0/backward]
+  ignore line: [ /home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/include]
+  ignore line: [ /home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/include-fixed]
+  ignore line: [ /home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++14 (GCC) version 7.2.0 (riscv64-unknown-linux-gnu)]
+  ignore line: [	compiled by GNU C version 7.5.0  GMP version 6.1.2  MPFR version 4.0.1  MPC version 1.1.0  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096]
+  ignore line: [Compiler executable checksum: 2b3ef4092ceddcdb17ce3a8fadbcc1e4]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_48ba3.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-march=rv64imafdc' '-mabi=lp64']
+  ignore line: [ /home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/bin/as -v --traditional-format -march=rv64imafdc -mabi=lp64 -o CMakeFiles/cmTC_48ba3.dir/CMakeCXXCompilerABI.cpp.obj /tmp/cciBrSMM.s]
+  ignore line: [GNU assembler version 2.29 (riscv64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.29]
+  ignore line: [COMPILER_PATH=/home/wangmin/keystone0.4/riscv/bin/../libexec/gcc/riscv64-unknown-linux-gnu/7.2.0/:/home/wangmin/keystone0.4/riscv/bin/../libexec/gcc/:/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/bin/]
+  ignore line: [LIBRARY_PATH=/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/lib64/lp64/:/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/lib/../lib64/lp64/:/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/:/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/:/home/wangmin/keystone0.4/riscv/bin/../lib/gcc/riscv64-unknown-linux-gnu/7.2.0/../../../../riscv64-unknown-linux-gnu/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_48ba3.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-march=rv64imafdc' '-mabi=lp64']
+  ignore line: [[2/2] Linking CXX static library libcmTC_48ba3.a]
+  ignore line: []
+  ignore line: []
+  implicit libs: []
+  implicit dirs: []
+  implicit fwks: []
+
+
+Performing C SOURCE FILE Test compiler_arch_test succeeded with the following output:
+Change Dir: /home/wangmin/sel4-test/temp/11.0.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_28efd && [1/2] Building C object CMakeFiles/cmTC_28efd.dir/src.c.obj
+[2/2] Linking C static library libcmTC_28efd.a
+
+
+Source file was:
+
+#if __riscv_xlen == 64
+    int main() {return 0;}
+#else
+#error Invalid arch
+#endif
+    

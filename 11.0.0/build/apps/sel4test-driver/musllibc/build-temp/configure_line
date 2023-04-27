@@ -1,0 +1,1 @@
+--srcdir=/home/wangmin/sel4-test/temp/11.0.0/projects/musllibc --prefix=/home/wangmin/sel4-test/temp/11.0.0/build/apps/sel4test-driver/musllibc/build-temp/stage  --target=riscv --enable-warnings --disable-shared --enable-static
