@@ -15,3 +15,13 @@ tools/seL4/elfloader-tool/src/fdt.c:uint32_t fdt_size(void *fdt)
 其中，`riscv-pk/machine`没有在`*.ninja`文件中出现
 
 因此，大概率是 `seL4/elfloader-tool/src/`文件夹里面的
+
+
+## 更改方法
+
+> tools/seL4/elfloader-tool/include/fdt.h
+
+```c
+void keystoneFDT(uint64_t memstart, uint64_t memsize);    //+++
+uint32_t fdt_size(void *fdt);
+```
