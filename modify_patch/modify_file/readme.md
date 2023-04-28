@@ -163,7 +163,7 @@ index 49972d31..9c52b510 100644
  </details>
  
  <details>
-<summary>6. diff --git include/plat/spike/plat/machine/hardware.h include/plat/spike/plat/machine/hardware.h ⭐⭐ </summary>
+<summary> ✔️ 6. diff --git include/plat/spike/plat/machine/hardware.h include/plat/spike/plat/machine/hardware.h ⭐⭐ </summary>
  
  ```
 diff --git include/plat/spike/plat/machine/hardware.h include/plat/spike/plat/machine/hardware.h
