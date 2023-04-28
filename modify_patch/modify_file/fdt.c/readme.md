@@ -49,7 +49,8 @@ uint32_t fdt_size(void *fdt)
 }
 ```
 
-> 补充：`add_avail_p_reg`未定义
+## 补充
+> ：`add_avail_p_reg`未定义
 
 ```c
 BOOT_CODE bool_t add_avail_p_reg(p_region_t reg)
@@ -75,4 +76,31 @@ kernel/include/plat/spike/plat/instance/rocket-chip/hardware.h:static p_region_t
 kernel/include/arch/riscv/arch/machine.h:int get_num_avail_p_regs(void);
 kernel/include/arch/riscv/arch/machine.h:p_region_t *get_avail_p_regs(void);
 kernel/include/kernel/boot.h:#define MAX_NUM_FREEMEM_REG (ARRAY_SIZE(avail_p_regs) + MODE_RESERVED + 1 + 1)
+```
+
+> `MAX_AVAIL_P_REGS`未找到定义，或许在11.0.0中去除了对`AVAIL_P_REGS`数组大小的限制
+
+### 额外修改方法
+>  kernel/src/arch/riscv/machine/hardware.c
+
+```c
+//+++   63，11
+BOOT_CODE bool_t add_avail_p_reg(p_region_t reg)
+{
+    //if (num_avail_p_regs == MAX_AVAIL_P_REGS) {
+    //    return false;
+    //}
+    int num_avail_p_regs = get_num_avail_p_regs();
+    avail_p_regs[num_avail_p_regs] = reg;
+    //num_avail_p_regs++;
+    return true;
+}
+```
+> kernel/include/arch/riscv/arch/machine.h
+
+```c
+int get_num_avail_p_regs(void);
+p_region_t *get_avail_p_regs(void);
+//+++   221, 1
+bool_t add_avail_p_reg(p_region_t reg);   
 ```
