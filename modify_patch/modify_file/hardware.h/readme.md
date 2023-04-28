@@ -23,8 +23,59 @@ kernel/include/arch/riscv/arch/32/mode/hardware.h:#define PADDR_BASE physBase
 
 因此初步定位为文件： 
 > kernel/include/arch/riscv/arch/64/mode/hardware.h
+> kernel/include/arch/riscv/arch/32/mode/hardware.h
 
+都改
+<details>
+<summary>32</summary>
 
+```c
+//#define PADDR_BASE physBase
+
+extern word_t keystone_paddr_base;
+inline word_t paddr_base(void)
+{
+   return keystone_paddr_base;
+}
+#define PADDR_BASE paddr_base()
+```
+```c
+//#define PADDR_LOAD UL_CONST(0x84000000)
+
+extern word_t keystone_paddr_load;
+inline word_t paddr_load(void)
+{
+	return keystone_paddr_load;
+}
+#define PADDR_LOAD paddr_load()
+```
+
+</details>
+
+<details>
+<summary>64 </summary>
+
+```c
+//#define PADDR_BASE 0x0lu
+
+extern word_t keystone_paddr_base;
+inline word_t paddr_base(void)
+{
+   return keystone_paddr_base;
+}
+#define PADDR_BASE paddr_base()
+```
+```c
+//#define PADDR_LOAD (physBase + UL_CONST(0x4000000))
+extern word_t keystone_paddr_load;
+inline word_t paddr_load(void)
+{
+	return keystone_paddr_load;
+}
+#define PADDR_LOAD paddr_load()
+```
+
+</details>
 
 ## 10.1.1 补丁
 
