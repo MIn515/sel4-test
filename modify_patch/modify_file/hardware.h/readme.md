@@ -8,11 +8,8 @@
 
 - v- 10.1.1
 > include/plat/spike/plat/machine/hardware.h://#define PADDR_BASE 0x80000000lu
-
 include/plat/spike/plat/machine/hardware.h://#define PADDR_BASE 0x0lu
-
 include/plat/spike/plat/machine/hardware.h:#define PADDR_BASE paddr_base()
-
 include/plat/pc99/plat/64/plat_mode/machine/hardware.h:#define PADDR_BASE  UL_CONST(0x00000000)
 include/plat/pc99/plat/32/plat_mode/machine/hardware.h:#define PADDR_BASE  0x00000000
 
