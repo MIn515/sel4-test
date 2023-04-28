@@ -143,7 +143,7 @@ index dd828f1f..fa8298b8 100644
  </details>
  
  <details>
-<summary>5. diff --git include/plat/spike/plat/machine/fdt.h include/plat/spike/plat/machine/fdt.h ⭐⭐ </summary>
+<summary> 乄 5. diff --git include/plat/spike/plat/machine/fdt.h include/plat/spike/plat/machine/fdt.h ⭐⭐ </summary>
  
  ```
 diff --git include/plat/spike/plat/machine/fdt.h include/plat/spike/plat/machine/fdt.h
@@ -587,7 +587,7 @@ index c68f4411..daf361da 100644
  </details>
  
  <details>
-<summary>11. diff --git src/plat/spike/machine/fdt.c src/plat/spike/machine/fdt.c ⭐⭐ </summary>
+<summary> 乄 11. diff --git src/plat/spike/machine/fdt.c src/plat/spike/machine/fdt.c ⭐⭐ </summary>
  
  ```
 diff --git src/plat/spike/machine/fdt.c src/plat/spike/machine/fdt.c
