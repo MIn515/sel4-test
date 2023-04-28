@@ -5,10 +5,10 @@
 ```
 wangmin@wangmin-G3-3579:~/sel4-test/temp/11.0.0$ ls | xargs grep -r 'fdt_size('
 tools/riscv-pk/bbl/bbl.c:  uint32_t size = fdt_size(source);
-tools/riscv-pk/machine/fdt.h:uint32_t fdt_size(uintptr_t fdt);
-tools/riscv-pk/machine/fdt.c:uint32_t fdt_size(uintptr_t fdt)
+⭐ tools/riscv-pk/machine/fdt.h:uint32_t fdt_size(uintptr_t fdt); ⭐
+⭐ tools/riscv-pk/machine/fdt.c:uint32_t fdt_size(uintptr_t fdt) ⭐
 tools/seL4/elfloader-tool/src/common.c:        *chosen_dtb_size = fdt_size(dtb);
-tools/seL4/elfloader-tool/src/fdt.c:uint32_t fdt_size(void *fdt)
+⭐ tools/seL4/elfloader-tool/src/fdt.c:uint32_t fdt_size(void *fdt) ⭐
 tools/seL4/elfloader-tool/include/fdt.h:uint32_t fdt_size(void *fdt);
 ```
 
