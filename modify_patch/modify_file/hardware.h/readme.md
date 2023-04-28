@@ -3,6 +3,25 @@
 > 但 `riscv/arch/machine` 里的`hardware.h` ，两个版本基本一样
 
 
+1. 根据全部文件匹配
+> ls | xargs grep -r '#define PADDR_BASE'
+
+- v- 10.1.1
+> include/plat/spike/plat/machine/hardware.h://#define PADDR_BASE 0x80000000lu
+include/plat/spike/plat/machine/hardware.h://#define PADDR_BASE 0x0lu
+include/plat/spike/plat/machine/hardware.h:#define PADDR_BASE paddr_base()
+include/plat/pc99/plat/64/plat_mode/machine/hardware.h:#define PADDR_BASE  UL_CONST(0x00000000)
+include/plat/pc99/plat/32/plat_mode/machine/hardware.h:#define PADDR_BASE  0x00000000
+
+- v- 11.0.0
+> kernel/include/plat/pc99/plat/64/plat_mode/machine/hardware.h:#define PADDR_BASE  UL_CONST(0x00000000)
+kernel/include/plat/pc99/plat/32/plat_mode/machine/hardware.h:#define PADDR_BASE  0x00000000
+kernel/include/arch/arm/arch/64/mode/hardware.h:#define PADDR_BASE 0x0
+kernel/include/arch/riscv/arch/64/mode/hardware.h:#define PADDR_BASE 0x0lu
+kernel/include/arch/riscv/arch/32/mode/hardware.h:#define PADDR_BASE physBase
+
+因此初步定位为文件： 
+> kernel/include/arch/riscv/arch/64/mode/hardware.h
 
 
 
