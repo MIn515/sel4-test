@@ -50,3 +50,29 @@ uint32_t fdt_size(void *fdt)
 ```
 
 > 补充：`add_avail_p_reg`未定义
+
+```c
+BOOT_CODE bool_t add_avail_p_reg(p_region_t reg)
+{
+    if (num_avail_p_regs == MAX_AVAIL_P_REGS) {
+        return false;
+    }
+    avail_p_regs[num_avail_p_regs] = reg;
+    num_avail_p_regs++;
+    return true;
+}
+```
+
+> 11.0.0.     ls | xargs grep -r 'avail_p_regs'
+
+```
+kernel/src/arch/riscv/kernel/boot.c:    init_freemem(get_num_avail_p_regs(), get_avail_p_regs(), MAX_RESERVED, res_reg, ui_v_reg, 0);
+kernel/src/arch/riscv/machine/hardware.c:BOOT_CODE int get_num_avail_p_regs(void)
+kernel/src/arch/riscv/machine/hardware.c:    return sizeof(avail_p_regs) / sizeof(p_region_t);
+kernel/src/arch/riscv/machine/hardware.c:BOOT_CODE p_region_t *get_avail_p_regs(void)
+kernel/src/arch/riscv/machine/hardware.c:    return (p_region_t *) avail_p_regs;
+kernel/include/plat/spike/plat/instance/rocket-chip/hardware.h:static p_region_t BOOT_DATA avail_p_regs[] = {
+kernel/include/arch/riscv/arch/machine.h:int get_num_avail_p_regs(void);
+kernel/include/arch/riscv/arch/machine.h:p_region_t *get_avail_p_regs(void);
+kernel/include/kernel/boot.h:#define MAX_NUM_FREEMEM_REG (ARRAY_SIZE(avail_p_regs) + MODE_RESERVED + 1 + 1)
+```
