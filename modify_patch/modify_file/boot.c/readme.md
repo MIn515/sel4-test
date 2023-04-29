@@ -8,12 +8,13 @@
 3. ✔️：增加 keystoneFDT
 4. ✔️：修改 try_init_kernel函数参数
 5. ✔️：增加 
-6. ❌：修改 dtb_reg = paddr_to_pptr_reg , 没有此函数
-7. ✔️：增加
-8. ✔️：修改 init_plat()
-9. ✔️：修改及增加 init_freemem，
-10. ✔️ ：增加：printf("Booting all finished, dropped to user space\n");后面
-11. 
+6.         注意是  `arch_init_freemem(ui_reg, it_v_reg);` 函数
+7. ❌：修改 dtb_reg = paddr_to_pptr_reg , 没有此函数
+8. ✔️：增加
+9. ✔️：修改 init_plat()
+10. ✔️：修改及增加 init_freemem，
+11. ✔️ ：增加：printf("Booting all finished, dropped to user space\n");后面
+12. 
 
 ```c++
 #ifdef ENABLE_SMP_SUPPORT
