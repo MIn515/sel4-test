@@ -53,7 +53,35 @@ inline word_t paddr_load(void)
 </details>
 
 <details>
-<summary>64 </summary>
+<summary> 🌟  64 --- discard  🌟 </summary>
+
+```c
+//#define PADDR_BASE 0x0lu
+
+extern word_t keystone_paddr_base;
+inline word_t paddr_base(void)
+{
+   return keystone_paddr_base;
+}
+#define PADDR_BASE paddr_base()
+```
+```c
+//#define PADDR_LOAD (physBase + UL_CONST(0x4000000))
+extern word_t keystone_paddr_load;
+inline word_t paddr_load(void)
+{
+	return keystone_paddr_load;
+}
+#define PADDR_LOAD paddr_load()
+```
+
+</details>
+
+<details>
+<summary> 🌟  64  --- new 🌟 </summary>
+
+将 `include/arch/riscv/arch/64/mode/hardware.h` 中的 `PADDR_BASE` 与 `PADDR_LOAD` 注释掉
+将以下声明加到 `include/plat/spike/plat/machine/hardware.h`  中
 
 ```c
 //#define PADDR_BASE 0x0lu
