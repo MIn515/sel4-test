@@ -109,21 +109,19 @@ bool_t add_avail_p_reg(p_region_t reg);
 `const`无法 add
 
 ```py
-```
 /* PHYSICAL MEMORY */
 static const p_region_t BOOT_RODATA avail_p_regs[] = {
     {% for reg in physical_memory %}
     { {{ "0x{:x}".format(reg.base) }}, {{ "0x{:x}".format(reg.base + reg.size) }} }, /* {{reg.owner.path}} */
     {% endfor %}
 };
-```
-const 去掉
-```
+
+## const 去掉
+
 /* PHYSICAL MEMORY */
 static  p_region_t BOOT_RODATA avail_p_regs[] = {
     {% for reg in physical_memory %}
     { {{ "0x{:x}".format(reg.base) }}, {{ "0x{:x}".format(reg.base + reg.size) }} }, /* {{reg.owner.path}} */
     {% endfor %}
 };
-```
 ```
