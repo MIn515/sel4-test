@@ -589,6 +589,8 @@ index c68f4411..daf361da 100644
  <details>
 <summary> 乄 11. diff --git src/plat/spike/machine/fdt.c src/plat/spike/machine/fdt.c ⭐⭐ </summary>
  
+  `add_avail_p_reg`
+  
  ```
 diff --git src/plat/spike/machine/fdt.c src/plat/spike/machine/fdt.c
 index 0b547a36..89c1ae5e 100644
