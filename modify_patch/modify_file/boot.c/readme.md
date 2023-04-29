@@ -229,8 +229,10 @@ res_reg[2].end = ui_reg.end;
 
 🌟🌟🌟🌟：
 > `insert_region_excluded`与 `insert_region` 函数未定义
-**方法：** 注释掉（新版没有`insert_region_excluded`，那应该就是不需要；也有可能是换了实现方式）
+**方法--discard：** 注释掉（新版没有`insert_region_excluded`，那应该就是不需要；也有可能是换了实现方式）
 
+**方法--new：** 将 `insert_region_excluded`函数的实现放在 `boot.c` 中
+       
 `insert_region_excluded`
 这个函数的作用是将一个内存区域分成两个部分，其中一个部分被保留，另一个部分被插入到内存中。这个函数的参数是两个内存区域，一个是要被分割的内存区域，另一个是要保留的内存区域。函数返回值是剩余的内存区域。
 
