@@ -104,3 +104,26 @@ p_region_t *get_avail_p_regs(void);
 //+++   221, 1
 bool_t add_avail_p_reg(p_region_t reg);   
 ```
+
+> kernel/tools/hardware/outputs/c_header.py
+`const`无法 add
+
+```py
+```
+/* PHYSICAL MEMORY */
+static const p_region_t BOOT_RODATA avail_p_regs[] = {
+    {% for reg in physical_memory %}
+    { {{ "0x{:x}".format(reg.base) }}, {{ "0x{:x}".format(reg.base + reg.size) }} }, /* {{reg.owner.path}} */
+    {% endfor %}
+};
+```
+const 去掉
+```
+/* PHYSICAL MEMORY */
+static  p_region_t BOOT_RODATA avail_p_regs[] = {
+    {% for reg in physical_memory %}
+    { {{ "0x{:x}".format(reg.base) }}, {{ "0x{:x}".format(reg.base + reg.size) }} }, /* {{reg.owner.path}} */
+    {% endfor %}
+};
+```
+```
