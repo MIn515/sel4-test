@@ -80,12 +80,13 @@ inline word_t paddr_load(void)
 <details>
 <summary> 🌟  64  --- new 🌟 </summary>
 
-将 `include/arch/riscv/arch/64/mode/hardware.h` 中的 `PADDR_BASE` 与 `PADDR_LOAD` 注释掉
+将 `include/arch/riscv/arch/64/mode/hardware.h` 中的 `PADDR_BASE` 与 `PADDR_LOAD` 保留
 将以下声明加到 `include/plat/spike/plat/machine/hardware.h`  中
 
 ```c
 //#define PADDR_BASE 0x0lu
 
+#undef PADDR_BASE
 extern word_t keystone_paddr_base;
 inline word_t paddr_base(void)
 {
@@ -95,6 +96,8 @@ inline word_t paddr_base(void)
 ```
 ```c
 //#define PADDR_LOAD (physBase + UL_CONST(0x4000000))
+	
+#undef PADDR_BASE
 extern word_t keystone_paddr_load;
 inline word_t paddr_load(void)
 {
