@@ -25,3 +25,10 @@ tools/seL4/elfloader-tool/src/fdt.c:uint32_t fdt_size(void *fdt)
 void keystoneFDT(uint64_t memstart, uint64_t memsize);    //+++
 uint32_t fdt_size(void *fdt);
 ```
+
+
+## new--更改方法
+
+> 直接在 ` kernel/src/arch/riscv/kernel/boot.c `文件中，增加 `keystoneFDT` 函数的定义与实现
+
+另外 `add_avail_p_reg`需要包含头文件，
