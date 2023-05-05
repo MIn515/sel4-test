@@ -22,7 +22,7 @@ src/arch/riscv/kernel/boot.c.orig:                                    dtb_output
 ```
 
 
-### 更改方法
+### 更改方法---discard
 > tools/seL4/elfloader-tool/src/fdt.c
 
 ```c
@@ -48,6 +48,9 @@ uint32_t fdt_size(void *fdt)
     return be32_to_le(hdr->totalsize);
 }
 ```
+
+### 方法---new
+> 见`fdt.h`
 
 ## 补充
 > ：`add_avail_p_reg`未定义
