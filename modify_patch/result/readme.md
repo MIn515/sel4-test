@@ -19,3 +19,9 @@
 
 
 ## keystone 运行结果
+
+### pass
+1. 循环出现：> superior IRQ!! SIP 0
+> ls | xargs grep -r 'SIP '  定位：src/arch/riscv/machine/hardware.c:    printf("Superior IRQ!! SIP %lx\n", read_sip());
+
+### new
