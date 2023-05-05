@@ -79,5 +79,5 @@ _start:
 11.0.0对SMP的支持；keystone 是否支持？  此版修改，设置SeL4 默认不支持SMP(CONFIG_MAX_NUM_NODES = 1.)
 
 ```c
-//
+//未改
 ```
