@@ -17,7 +17,7 @@ tools/seL4/elfloader-tool/src/fdt.c:uint32_t fdt_size(void *fdt)
 因此，大概率是 `seL4/elfloader-tool/src/`文件夹里面的
 
 
-## 更改方法
+## 更改方法--discard
 
 > tools/seL4/elfloader-tool/include/fdt.h
 
