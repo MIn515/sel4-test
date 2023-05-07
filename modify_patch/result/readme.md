@@ -26,4 +26,9 @@
 
 ![image](https://user-images.githubusercontent.com/74185337/236675577-fd45a0a1-0730-4b55-bbd8-fb1cbe9f2df9.png)
 
+> 原因：
+> `try_init_kernel`函数`keystone_map_kernel_window(keystone_dram_base, keystone_dram_base + keystone_dram_size);`语句
+> 函参（keystone_dram_size=18446744071629287424, keystone_dram_base=2218528768）
+![image](https://user-images.githubusercontent.com/74185337/236677603-14a3236e-0411-40f1-84b2-aa0c24303bbf.png)
+
 ### new
