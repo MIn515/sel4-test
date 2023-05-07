@@ -24,4 +24,6 @@
 1. 循环出现：> superior IRQ!! SIP 0
 > ls | xargs grep -r 'SIP '  定位：src/arch/riscv/machine/hardware.c:    printf("Superior IRQ!! SIP %lx\n", read_sip());
 
+![image](https://user-images.githubusercontent.com/74185337/236675577-fd45a0a1-0730-4b55-bbd8-fb1cbe9f2df9.png)
+
 ### new
