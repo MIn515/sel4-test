@@ -32,8 +32,12 @@
   ```c
   //11.0.0
   init_kernel
+  (dummy=2214768640, keystone_dram_base=2218528768, 
+    keystone_dram_size=18446744071629287424, keystone_runtime_start=97930, 
+    keystone_user_start=2214768640, keystone_free_start=97930, 
+    keystone_utm_ptr=18446744071629176832, keystone_utm_size=1)
   
-  
+  keystone_map_kernel_window (dram_start=2218528768, dram_end=138264576)
   
   ```
   
