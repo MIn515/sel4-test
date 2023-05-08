@@ -28,9 +28,9 @@
 
 > 原因：
 
-[调试]()
+[调试](https://github.com/MIn515/sel4-test/blob/main/modify_patch/result/debug.md)
 
-```
+
 
 
 ![image](https://user-images.githubusercontent.com/74185337/236677603-14a3236e-0411-40f1-84b2-aa0c24303bbf.png)
