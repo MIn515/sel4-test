@@ -43,4 +43,6 @@
 
 未修改脚本的运行结果
 
-[调试](https://github.com/MIn515/sel4-test/blob/main/modify_patch/result/debug.md)
+[keytone调试](https://github.com/MIn515/sel4-test/blob/main/modify_patch/result/keystone-debug.md)
+
+
