@@ -11,7 +11,9 @@ bbl 二进制文件的位置    `build/riscv-pk.build/bbl`
 
 可 break  的地方：
 > get_enclave_region_size
+
 > run_enclave
+
 > resume_enclave
 
 
