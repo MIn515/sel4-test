@@ -91,6 +91,7 @@ which has no line number information.
 
 ```
 
+可知故障发生在：（启动 enclave 之前还是之后？）
 
 ##  调试运行时系统`kernel`
 
