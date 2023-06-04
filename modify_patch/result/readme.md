@@ -35,7 +35,7 @@
 
 ![image](https://user-images.githubusercontent.com/74185337/236677603-14a3236e-0411-40f1-84b2-aa0c24303bbf.png)
 
-### new
+### pass
 
 在 `keystone` 里面运行 
 
@@ -44,5 +44,13 @@
 未修改脚本的运行结果
 
 [keytone调试](https://github.com/MIn515/sel4-test/blob/main/modify_patch/result/keystone-debug.md)
+
+
+
+
+
+### new
+
+![image](https://github.com/MIn515/sel4-test/assets/74185337/00c8f677-d6fc-4067-bf8b-b317b5858b59)
 
 
