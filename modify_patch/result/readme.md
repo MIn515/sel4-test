@@ -55,8 +55,10 @@
 在 `keystone` 里面运行 , runner 是用的 sel410.1.1 配套的runner【步骤：先运行keystone sel4 10.1.1，生成 三个文件：kernel.elf、sel4-driver、runner，runner 保持不变，分别将kernel.elf、sel4-driver替换成11.0.0编译之后的文件】
 
 **结果1：只替换kernel.elf   或   替换 kernel.elf + sel4-driver**
+> 卡住
 ![image](https://github.com/MIn515/sel4-test/assets/74185337/328d6c66-d710-4fe6-b4dd-7ca024c9f97a)
 **结果2：只替换sel4-driver**
+> 成功输出一半
 ![image](https://github.com/MIn515/sel4-test/assets/74185337/8d5a36ff-ce49-47c4-b153-b9f48444f363)
 
 
