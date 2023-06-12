@@ -66,3 +66,6 @@
 
 > 说明：？
 
+
+**GDB`sel4-driver`不管用，因为在sel4-driver的main之前卡住了  【也有可能是在main之前的其他函数】**
+![image](https://github.com/MIn515/sel4-test/assets/74185337/da58beb3-b454-4c51-8a42-ff6a9d9f8018)
