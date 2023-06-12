@@ -1,5 +1,6 @@
 # 
 
+![image](https://github.com/MIn515/sel4-test/assets/74185337/8d5a36ff-ce49-47c4-b153-b9f48444f363)
 
 
 <details>
@@ -126,7 +127,7 @@ int main(void)
     error = seL4_TCB_Resume(tcb_object.cptr);
     ZF_LOGF_IFERR(error, "Failed to start new thread.\n");
     /* we are done, say hello */
-    printf("hello world\n");
+    printf("hello，world!\n");
     return 0;
 }
   
@@ -150,3 +151,5 @@ __libc_start_main (main=0x1072a <main>, argc=<optimized out>, argv=0x3fffa43d58,
 288	libc-start.c: 没有那个文件或目录.
 
 ```
+  
+
