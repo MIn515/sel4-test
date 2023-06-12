@@ -51,6 +51,4 @@
 
 ### new
 
-![image](https://github.com/MIn515/sel4-test/assets/74185337/00c8f677-d6fc-4067-bf8b-b317b5858b59)
-
 
