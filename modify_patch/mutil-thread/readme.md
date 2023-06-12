@@ -1,6 +1,5 @@
 # 
 
-![image](https://github.com/MIn515/sel4-test/assets/74185337/1a81d064-169c-4ae9-8703-1f94ca5df404)
 
 
 <details>
@@ -127,14 +126,18 @@ int main(void)
     error = seL4_TCB_Resume(tcb_object.cptr);
     ZF_LOGF_IFERR(error, "Failed to start new thread.\n");
     /* we are done, say hello */
-    printf("main: hello world\n");
+    printf("hello world\n");
     return 0;
 }
   
   ```
 </details>
 
-## 
+## 调试 
+  
+![image](https://github.com/MIn515/sel4-test/assets/74185337/1a81d064-169c-4ae9-8703-1f94ca5df404)
+
+  
 ```
 __libc_csu_init (argc=<optimized out>, argv=0x3fffa43d58, envp=0x3fffa43d78)
     at ../csu/elf-init.c:87
