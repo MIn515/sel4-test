@@ -1,13 +1,13 @@
-<mxfile host="app.diagrams.net" modified="2023-07-07T09:43:18.548Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.67" etag="wUCVGbdsqGYKn3BR35D2" version="21.6.1" type="github">
+<mxfile host="app.diagrams.net" modified="2023-07-07T09:50:57.859Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.67" etag="plx4Mr543hZoFmQ9q5Wf" version="21.6.1" type="github">
   <diagram name="第 1 页" id="m9Fxw6LeTa_XZ3al7phB">
-    <mxGraphModel dx="935" dy="445" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1811" dy="598" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="f0ESqXNt_cEsnT7XpvTg-33" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="580" y="682" width="140" height="204" as="geometry" />
         </mxCell>
-        <mxCell id="f0ESqXNt_cEsnT7XpvTg-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="f0ESqXNt_cEsnT7XpvTg-1">
+        <mxCell id="f0ESqXNt_cEsnT7XpvTg-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=2;" edge="1" parent="1" source="f0ESqXNt_cEsnT7XpvTg-1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1035.9954833984375" y="1112.6999130249023" as="targetPoint" />
           </mxGeometry>
@@ -21,7 +21,7 @@
         <mxCell id="f0ESqXNt_cEsnT7XpvTg-6" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="345" y="1110" width="130" height="65" as="geometry" />
         </mxCell>
-        <mxCell id="f0ESqXNt_cEsnT7XpvTg-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="f0ESqXNt_cEsnT7XpvTg-7">
+        <mxCell id="f0ESqXNt_cEsnT7XpvTg-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="f0ESqXNt_cEsnT7XpvTg-7">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="408.125" y="1230.0000000000002" as="targetPoint" />
           </mxGeometry>
@@ -41,7 +41,7 @@
         <mxCell id="f0ESqXNt_cEsnT7XpvTg-12" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Machine&lt;br&gt;(M-mode)&amp;nbsp;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="215" y="975" width="110" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="f0ESqXNt_cEsnT7XpvTg-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="f0ESqXNt_cEsnT7XpvTg-13">
+        <mxCell id="f0ESqXNt_cEsnT7XpvTg-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;" edge="1" parent="1" source="f0ESqXNt_cEsnT7XpvTg-13">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="611.25" y="1300.0000000000002" as="targetPoint" />
           </mxGeometry>
@@ -91,7 +91,7 @@
         <mxCell id="f0ESqXNt_cEsnT7XpvTg-32" value="&lt;font color=&quot;#6e6e6e&quot; style=&quot;font-size: 18px;&quot;&gt;OpenSBI&amp;nbsp; HS-mode&amp;nbsp; &amp;nbsp;:&amp;nbsp; &amp;nbsp;&lt;/font&gt;&lt;font color=&quot;#cc0000&quot; style=&quot;font-size: 18px;&quot;&gt;对应x86等其他指令集的四个权限级别&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="304" y="913" width="511" height="34" as="geometry" />
         </mxCell>
-        <mxCell id="f0ESqXNt_cEsnT7XpvTg-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="f0ESqXNt_cEsnT7XpvTg-34">
+        <mxCell id="f0ESqXNt_cEsnT7XpvTg-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=2;" edge="1" parent="1" source="f0ESqXNt_cEsnT7XpvTg-34">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1040.0000762939453" y="832.75" as="targetPoint" />
           </mxGeometry>
@@ -108,8 +108,14 @@
         <mxCell id="f0ESqXNt_cEsnT7XpvTg-39" value="&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;支持跨架构&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;实现动态可变的TEE内存模型，以方便飞地间通信&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; （如嵌套的，隔离TCB的....四种共享模型）&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="942" y="1130" width="453" height="101" as="geometry" />
         </mxCell>
-        <mxCell id="f0ESqXNt_cEsnT7XpvTg-41" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;讨论&lt;br&gt;&lt;ol&gt;&lt;li&gt;RT组件要不要可信？可以把能力管理的部分作为TCB，其他作为不可信部分&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1616" y="660" width="658" height="91" as="geometry" />
+        <mxCell id="f0ESqXNt_cEsnT7XpvTg-41" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;div style=&quot;font-size: 18px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#ff3333&quot;&gt;讨论&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(50, 49, 48);&quot;&gt;&lt;ol style=&quot;&quot;&gt;&lt;li style=&quot;font-size: 18px;&quot;&gt;RT组件要不要可信？----可以把能力管理的部分作为TCB，其他作为不可信部分&lt;/li&gt;&lt;li style=&quot;font-size: 18px;&quot;&gt;如何划分出能力管理系统?&lt;/li&gt;&lt;li style=&quot;font-size: 18px;&quot;&gt;能力管理系统和其他的组件之间如何协调(其他的组件，如网络，内存管理等肯定都需要使用到能力)？&lt;/li&gt;&lt;li style=&quot;font-size: 18px;&quot;&gt;其他组件作恶怎么办（怎么保证安全）？&lt;/li&gt;&lt;li style=&quot;font-size: 18px;&quot;&gt;sel4是基于软件的能力框架还是基于硬件的能力框架？&lt;br&gt;&lt;/li&gt;&lt;li style=&quot;&quot;&gt;如果RT使用能力框架，那整个系统要不要使用能力框架？&lt;br&gt;&amp;nbsp; &amp;nbsp;如果不用的话，飞地与OS之间兼容性（一个基于能力一个基于传统指针）?&lt;br&gt;&amp;nbsp; &amp;nbsp;如果要的话,系统应用场景（局限在基于能力的内存访问框架）？&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1552" y="783" width="862" height="242" as="geometry" />
+        </mxCell>
+        <mxCell id="f0ESqXNt_cEsnT7XpvTg-43" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=3;" edge="1" parent="1" target="f0ESqXNt_cEsnT7XpvTg-41">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1490" y="911" as="sourcePoint" />
+            <mxPoint x="1540" y="861" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
