@@ -1,0 +1,1 @@
+#define CONFIG_HAVE_CACHE 1

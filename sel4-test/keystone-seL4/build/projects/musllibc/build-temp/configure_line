@@ -1,0 +1,1 @@
+--srcdir=/home/wmin/riscv/keystone-master/keystone/keystone-seL4/projects/musllibc --prefix=/home/wmin/riscv/keystone-master/keystone/keystone-seL4/build/projects/musllibc/build-temp/stage  --target=riscv --enable-warnings --disable-shared --enable-static

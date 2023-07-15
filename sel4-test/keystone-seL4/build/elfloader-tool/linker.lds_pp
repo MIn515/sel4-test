@@ -1,0 +1,55 @@
+OUTPUT_ARCH( "riscv" )
+ENTRY( _start )
+SECTIONS
+{
+  . = 0x0000000080400000;
+  .start :
+    {
+        *(.text.start)
+    }
+  .text :
+  {
+    *(.text)
+  }
+  PROVIDE( etext = . );
+  _etext = .;
+  . = ALIGN(16);
+   _fdata = .;
+    _sdata = .;
+   .sdata : {
+    __global_pointer$ = . + 0x800;
+    *(.sdata*)
+  }
+    .srodata : {
+    *(.srodata*)
+  }
+  .data :
+  {
+    *(.data)
+    *(.data.*)
+  }
+  . = ALIGN(4);
+  PROVIDE( edata = . );
+  _edata = .;
+  . = .;
+  _fbss = .;
+  . = .;
+  . = .;
+  _bss_start = .;
+  .bss :
+  {
+    *(.bss)
+    *(.bss.*)
+    *(.sbss*)
+  }
+  .rodata :
+  {
+    *(.rodata)
+    *(.rodata.*)
+    . = ALIGN(8);
+    _archive_start = .;
+      *(._archive_cpio)
+    _archive_end = .;
+  }
+_end = .;
+}

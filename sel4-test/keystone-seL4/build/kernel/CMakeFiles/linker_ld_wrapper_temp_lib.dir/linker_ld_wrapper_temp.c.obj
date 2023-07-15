@@ -1,0 +1,99 @@
+/*
+ * Copyright 2018, Data61
+ * Commonwealth Scientific and Industrial Research Organisation (CSIRO)
+ * ABN 41 687 119 230.
+ *
+ * This software may be distributed and modified according to the terms of
+ * the GNU General Public License version 2. Note that NO WARRANTY is provided.
+ * See "LICENSE_GPLv2.txt" for details.
+ *
+ * @TAG(DATA61_GPL)
+ */
+/*
+ *
+ * Copyright 2016, 2017 Hesham Almatary, Data61/CSIRO <hesham.almatary@data61.csiro.au>
+ * Copyright 2015, 2016 Hesham Almatary <heshamelmatary@gmail.com>
+ */
+OUTPUT_ARCH(riscv)
+ENTRY(_start)
+/*
+ * Copyright 2014, General Dynamics C4 Systems
+ *
+ * This software may be distributed and modified according to the terms of
+ * the GNU General Public License version 2. Note that NO WARRANTY is provided.
+ * See "LICENSE_GPLv2.txt" for details.
+ *
+ * @TAG(GD_GPL)
+ */
+/* Compile-time configuration parameters. Might be set by the build system. */
+/* size of the initial thread's root CNode (2^x slots, x >= 4) */
+/* number of timer ticks until a thread is preempted  */
+/* the number of scheduler domains */
+/* number of priorities per domain */
+/* maximum number of caps that can be created in one retype invocation */
+/* chunk size for memory clears during retype, in bits. */
+/* maximum number of iterations until we preempt a delete/revoke invocation */
+/* address range to flush per preemption work unit */
+/* maximum number of untyped caps in bootinfo */
+/* WARNING: must match value in libsel4! */
+/* CONSTRAINT: (16 * CONFIG_MAX_NUM_BOOTINFO_DEVICE_REGIONS) + (5 * CONFIG_MAX_NUM_BOOTINFO_UNTYPED_CAPS) <= 4036 */
+/* length of a timer tick in ms  */
+/* maximum number of different tracepoints which can be placed in the kernel */
+/* maximum number of IOMMU RMRR entries we can record while ACPI parsing */
+/* maximum number of IOAPIC supported */
+/* Alias CONFIG_MAX_NUM_NODES > 1 to ENABLE_SMP_SUPPORT */
+KERNEL_BASE = 0xFFFFFFFF80000000;
+/* WARNING: constants also defined in plat/machine/hardware.h */
+PADDR_LOAD = 0x00000000C0000000;
+KERNEL_OFFSET = KERNEL_BASE - PADDR_LOAD;
+SECTIONS
+{
+    . = KERNEL_BASE;
+    .boot . : AT(ADDR(.boot) - KERNEL_OFFSET)
+    {
+        *(.boot.text)
+        *(.boot.rodata)
+        *(.boot.data)
+        . = ALIGN(64K);
+    }
+    ki_boot_end = .;
+    .text . : AT(ADDR(.text) - KERNEL_OFFSET)
+    {
+        /* Sit inside a large frame */
+        . = ALIGN(4K);
+        /* Standard kernel */
+        *(.text)
+    }
+    /* Start of data section */
+    _sdata = .;
+    .sdata : {
+        __global_pointer$ = . + 0x800;
+        *(.sdata*)
+    }
+    .srodata : {
+        *(.srodata*)
+    }
+    .rodata . : AT(ADDR(.rodata) - KERNEL_OFFSET)
+    {
+        *(.rodata)
+        *(.rodata.*)
+    }
+    .data . : AT(ADDR(.data) - KERNEL_OFFSET)
+    {
+        *(.data)
+    }
+    .bss . : AT(ADDR(.bss) - KERNEL_OFFSET)
+    {
+        *(.bss)
+        *(.sbss)
+        /* 4k breakpoint stack */
+        _breakpoint_stack_bottom = .;
+        . = . + 4K;
+        _breakpoint_stack_top = .;
+        /* large data such as the globals frame and global PD */
+        *(.bss.aligned)
+        . = . + 8;
+    }
+    . = ALIGN(4K);
+    ki_end = .;
+}
