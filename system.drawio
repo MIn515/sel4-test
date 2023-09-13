@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-09-13T02:34:45.616Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.76" etag="GRduFTe0eycvSBbFQ7rK" version="21.7.4" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-09-13T13:02:48.598Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.76" etag="fUlA3PAHEb-LBenWEtnN" version="21.7.4" type="github" pages="3">
   <diagram name="第 1 页" id="m9Fxw6LeTa_XZ3al7phB">
     <mxGraphModel dx="1542" dy="835" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -256,7 +256,7 @@
         <mxCell id="RZhRVzkIClwUdiuk6oa8-17" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;mpu_tag&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-148" y="392.5" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="RZhRVzkIClwUdiuk6oa8-19" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;pk&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="RZhRVzkIClwUdiuk6oa8-19" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;pk(&lt;font color=&quot;#ff0000&quot;&gt;x&lt;/font&gt;)&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-148" y="499.5" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="RZhRVzkIClwUdiuk6oa8-20" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;bbl(&lt;font color=&quot;#ff3333&quot;&gt;?&lt;/font&gt;)&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
@@ -281,6 +281,9 @@
         </mxCell>
         <mxCell id="RZhRVzkIClwUdiuk6oa8-30" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.x;strokeColor=#FF3333;fillColor=#f90606;" vertex="1" parent="1">
           <mxGeometry x="-114" y="749" width="26" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="RZhRVzkIClwUdiuk6oa8-36" value="&lt;span style=&quot;color: rgb(17, 17, 17); font-family: -apple-system, Roboto, SegoeUI, &amp;quot;Segoe UI&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;Meiryo UI&amp;quot;, Meiryo, &amp;quot;Arial Unicode MS&amp;quot;, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgba(255, 255, 255, 0.7); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;用 spike 模拟 RISC-V，可以不需要代理内核 pk 而直接运行 ELF 文件，但是这需要满足一些条件。首先，你需要使用 -m 选项来指定模拟器的内存大小，以免出现内存不足的错误。其次，你需要使用 --isa 选项来指定 RISC-V 的指令集，以保证与你的 ELF 文件匹配。最后，你需要使用 -p 选项来指定模拟器的核心数，以保证与你的 ELF 文件的并行性能一致。&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="76.00002712673609" y="471.002208658854" width="550" height="118" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
