@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-10-12T06:47:50.447Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.60" etag="zddsczBeOOFoumI7yzff" version="22.0.4" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-10-21T04:30:25.104Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.57" etag="UK4XyQzsXHb-4X6JhlAS" version="22.0.6" type="github" pages="3">
   <diagram name="top-" id="m9Fxw6LeTa_XZ3al7phB">
     <mxGraphModel dx="1542" dy="835" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -321,8 +321,11 @@
         <mxCell id="0HpQGtwYEt2qIFY-V9nZ-3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;" parent="1" vertex="1">
           <mxGeometry x="618" y="1673" width="79" height="67" as="geometry" />
         </mxCell>
-        <mxCell id="GLAL3-YYrjauX-FOx1Rn-1" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;飞地无法保证飞地内的内存损坏漏洞，无法限制飞地内部攻击者&lt;br&gt;编程模型单一【仍然属于一个可用性的问题；抵抗拒绝服务攻击】&lt;br&gt;因此需要飞地内部的内存隔离技术&lt;br&gt;（嵌套飞地）---和嵌套飞地相比?&lt;br&gt;&lt;br&gt;&lt;br&gt;如果思想、方法比较简单，那就要说说挑战，方法看起来虽然简单，但要实现目的仍然存在很大的挑战&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="GLAL3-YYrjauX-FOx1Rn-1" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;飞地无法保证飞地内的内存损坏漏洞，无法限制飞地内部攻击者&lt;br&gt;编程模型单一【仍然属于一个可用性的问题；抵抗拒绝服务攻击】&lt;br&gt;因此需要飞地内部的内存隔离技术&lt;br&gt;（嵌套飞地）---和嵌套飞地相比?&lt;br&gt;&lt;br&gt;&lt;br&gt;如果思想、方法比较简单，那就要说说挑战，方法看起来虽然简单，但要实现目的仍然存在很大的挑战&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="133" y="690" width="783" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="-BV0A-KI2Tf-4z8SNRwf-1" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;动态Tcb 的 motive ： 缩小 rop 等攻击的攻击面。&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="355" y="905" width="364" height="31" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
