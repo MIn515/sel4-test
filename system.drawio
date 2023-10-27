@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-10-27T06:37:13.645Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.69" etag="tNxfclXsRv_z8J4e7mm4" version="22.0.8" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-10-27T15:31:03.791Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.69" etag="31SLR1dsveMP4ANnVLp0" version="22.0.8" type="github" pages="3">
   <diagram name="top-" id="m9Fxw6LeTa_XZ3al7phB">
     <mxGraphModel dx="1542" dy="835" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -327,8 +327,11 @@
         <mxCell id="-BV0A-KI2Tf-4z8SNRwf-1" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;动态Tcb 的 motive ： 缩小 rop 等攻击的攻击面。&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="355" y="905" width="364" height="31" as="geometry" />
         </mxCell>
-        <mxCell id="yg09KcbIoyv3Go5uYUoW-1" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;动态性质：&amp;nbsp;大多数信息系统都建立在相对静态的平台上。许多防御技术还涉及静态完整性检查和内省。&lt;/font&gt;&lt;p style=&quot;margin: 0.7em 0em 0em; font-family: 微软雅黑; letter-spacing: 1px; text-align: justify; font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;这种防御机制的静态性质使攻击者有时间彻底研究目标系统并启动漏洞利用---多ISA&lt;/font&gt;&lt;/p&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="18" y="193" width="742" height="62" as="geometry" />
+        <mxCell id="yg09KcbIoyv3Go5uYUoW-1" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;动态性质&lt;/b&gt;：&amp;nbsp;大多数信息系统都建立在相对静态的平台上。许多防御技术还涉及静态完整性检查和内省。&lt;/font&gt;&lt;p style=&quot;margin: 0.7em 0em 0em; font-family: 微软雅黑; letter-spacing: 1px; text-align: justify; font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;这种防御机制的静态性质使攻击者有时间彻底研究目标系统并启动漏洞利用---多ISA&lt;/font&gt;&lt;/p&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="99" y="50" width="742" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="yg09KcbIoyv3Go5uYUoW-2" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;模块化拓展&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="85" y="207" width="93" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
